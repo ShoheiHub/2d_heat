@@ -1,5 +1,5 @@
 print('__init__')
 
-import_mod=['a','advection']
+import_mod=['advection']
 
 __all__=import_mod

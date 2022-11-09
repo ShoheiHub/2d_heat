@@ -1,7 +1,12 @@
-from mod import *
+import numpy as np
+import matplotlib.pyplot as plt
 
-print(a.b())
-#import mod.a
+# import my modules
+from para import *
+from advection import *
+from diffusion import *
 
-#print(mod.a.b())
-#print(dir(mod))
+
+
+diff(u,v)
+print(dx)
