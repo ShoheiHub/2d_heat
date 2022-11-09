@@ -1,4 +1,7 @@
-import mod.a as a
+from mod import *
 
+print(a.b())
+#import mod.a
 
-a.b()
+#print(mod.a.b())
+#print(dir(mod))
