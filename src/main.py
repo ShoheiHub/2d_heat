@@ -2,11 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # import my modules
-from para import *
-from advection import *
-from diffusion import *
+#from mod.para import *
+from mod.advection import *
+from mod.diffusion import *
 
-
-
-diff(u,v)
-print(dx)

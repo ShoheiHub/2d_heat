@@ -1,5 +1,7 @@
 print('__init__')
 
-import_mod=['advection']
 
-__all__=import_mod
+#import para
+#from advection import *
+#from diffusion import *
+
