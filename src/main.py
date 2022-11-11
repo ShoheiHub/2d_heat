@@ -1,6 +1,12 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
+
+from mod import *
+
+print(mod1())
+
+"""
 nx = 5
 nz = 5
 
@@ -37,7 +43,7 @@ def diff_sca():
 def diff_fulx():
     return
 
-
+"""
 
 
 """

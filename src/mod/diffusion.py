@@ -1,9 +1,11 @@
 import numpy as np
 
 # import para mod
-from para import *
-    
+from .para import *
 
+
+def mod1():
+    return nx
 """
 def diff(x=None,y=None):
     print('diffusion')
