@@ -1,22 +1,14 @@
-import numpy as np
+#import numpy as np
 
 # import para mod
 from .para import *
 
-
-def mod1():
-    return nx
-"""
-def diff(x=None,y=None):
-    print('diffusion')
-    im = np.shape(x)[0]
-    jm = np.shape(y)[1]
-    print(im,jm)
+def diff_scalar(X,Z,i,k,dt=None):
+    print(f'diffusion{i}{k}')
     for j in range(1,im-1):
         for i in range(1,jm-1):
-            a=1
-            #dtdx2 = dt / (dx[i]**2)
-            #dtdy2 = dt / (dy[j]**2)
+            dtdx2 = dt / (dx[i]**2)
+            dtdy2 = dt / (dy[j]**2)
             #print(f'i={i},j={j},{dx[i]},{dy[j]}')
             #fxx = x[i+1,j  ,0] - 2*x[i,j,0] + x[i-1,j  ,0]
             #fxy = x[i  ,j+1,0] - 2*x[i,j,0] + x[i  ,j-1,0]
@@ -25,5 +17,5 @@ def diff(x=None,y=None):
 
             #x[i,j,1] = x[i,j,0] + nu*( dtdx2*fxx + dtdy2*fxy )
             #y[i,j,1] = y[i,j,0] + nu*( dtdx2*fyx + dtdy2*fyy )
-#    return x, y
-"""
+    return
+

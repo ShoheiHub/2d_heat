@@ -2,12 +2,12 @@ import numpy as np
 # write down some parameter
 
 # number of girds (x, y) [-]
-nx=2
-ny=2
+nx=4
+nz=4
 
 # Length (x ,y) [m]
 Lx = 1
-Ly = 1
+Lz = 1
 
 # time step [sec]
 dt = 0.1
@@ -16,15 +16,11 @@ dt = 0.1
 nu = 1e-6
 
 # set up
-x = np.linspace(0,1,nx)
-y = np.linspace(0,1,ny)
-xx, yy = np.meshgrid(x,y)
+x = np.linspace(0,Lx,nx+1)
+z = np.linspace(0,Lz,nz+1)
+xx, zz = np.meshgrid(x,z)
 
-dx = np.array([ x[i+1]-x[i] for i in range(nx-1)])
-dy = np.array([ y[j+1]-y[j] for j in range(ny-1)])
-#print(dx)
-
-
-t = np.zeros((nx  ,ny  ,3))
-u = np.zeros((nx+1,ny  ,3))
-v = np.zeros((nx  ,ny+1,3))
+# scalar & fulux
+t = np.zeros((nx  ,nz  ,3)) # [K]
+u = np.zeros((nx+1,nz  ,3)) # [m/s]
+w = np.zeros((nx  ,nz+1,3)) # [m/s]
