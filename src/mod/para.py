@@ -14,7 +14,7 @@ Lz = 1
 dt = 0.1
 
 # end of ime [sec]
-time = 10
+time = 1
 
 # viscousity coefficient [m^2/s]
 nu = 1e-6

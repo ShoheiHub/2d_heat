@@ -1,14 +1,14 @@
 #import numpy as np
 
-# import para mod
+# import my parameter module
 from .para import *
 
-def diff_scalar(X,Z,i,k,dt=None):
+def dif_scalar(X,Z,i,k,dt=None):
     print(f'diffusion{i}{k}')
-    for j in range(1,im-1):
-        for i in range(1,jm-1):
-            dtdx2 = dt / (dx[i]**2)
-            dtdy2 = dt / (dy[j]**2)
+    #for j in range(1,im-1):
+        #for i in range(1,jm-1):
+            #dtdx2 = dt / (dx[i]**2)
+            #dtdy2 = dt / (dy[j]**2)
             #print(f'i={i},j={j},{dx[i]},{dy[j]}')
             #fxx = x[i+1,j  ,0] - 2*x[i,j,0] + x[i-1,j  ,0]
             #fxy = x[i  ,j+1,0] - 2*x[i,j,0] + x[i  ,j-1,0]
